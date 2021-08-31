@@ -1,0 +1,63 @@
+<!DOCTYPE html>>
+<html>
+    <head>
+        <title>
+            asd
+        </title>
+        <style>
+     
+
+.movv {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-image: url("66.png");
+  background-size: cover;
+  border-radius: 10%;
+  top: 25px;
+  animation-name: move-right;
+  animation: 4s infinite alternate;
+  animation-direction: reverse;
+  animation-timing-function: linear;
+
+}
+
+.movv:hover{
+    animation-play-state:paused; 
+
+}
+
+@keyframes move-right {
+  from {
+    left: -1%;
+  }
+
+  to {
+    left: 100%;
+  }
+}
+
+
+
+        </style>
+    </head>
+    <body onload="action1()">
+        <div>
+            <div class="movv"></div>
+          </div>
+          
+            
+            
+            
+        
+
+          <script>
+const divElem = document.querySelector('.movv');
+function action1(){
+    divElem.style.animationName = 'move-right';
+
+}
+
+          </script>
+    </body>
+</html>
